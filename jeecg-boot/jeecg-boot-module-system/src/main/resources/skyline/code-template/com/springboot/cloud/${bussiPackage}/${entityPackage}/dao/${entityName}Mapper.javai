@@ -1,0 +1,16 @@
+package com.springboot.cloud.${bussiPackage}.${entityPackage}.dao;
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.springboot.cloud.${bussiPackage}.${entityPackage}.entity.po.${entityName};
+import org.apache.ibatis.annotations.Mapper;
+
+/**
+ * @ClassName ${entityName}Mapper
+ * @Description ${tableVo.ftlDescription}
+ * @Author cj
+ * @Date: ${.now?string["yyyy-MM-dd"]}
+ */
+@Mapper
+public interface ${entityName}Mapper extends BaseMapper<${entityName}> {
+
+}

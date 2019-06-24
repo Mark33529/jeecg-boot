@@ -1,0 +1,24 @@
+import { hp } from '@/utils/util'
+
+// 说明：链接中第一个${entityName?uncap_first}为微服务项目名，第二个为${entityPackage}名
+export default $axios => ${entityName?uncap_first} => ({
+  getByPage (pageNum, pageSize, params) {
+    return $axios.$post(`/api2/${entityPackage?uncap_first}/${r"${"}${entityName?uncap_first}${r"}"}/query?pageNum=${r"${pageNum}"}&pageSize=${r"${pageSize}"}`, hp(params))
+  },
+
+  get (id) {
+    return $axios.$get(`/api2/${entityPackage?uncap_first}/${r"${"}${entityName?uncap_first}${r"}"}/${r"${id}"}`)
+  },
+
+  add (params) {
+    return $axios.$post(`/api2/${entityPackage?uncap_first}/${r"${"}${entityName?uncap_first}${r"}"}`, hp(params))
+  },
+
+  update (id, params) {
+    return $axios.$put(`/api2/${entityPackage?uncap_first}/${r"${"}${entityName?uncap_first}${r"}"}/${r"${id}"}`, hp(params))
+  },
+
+  del (id) {
+    return $axios.$delete(`/api2/${entityPackage?uncap_first}/${r"${"}${entityName?uncap_first}${r"}"}/${r"${id}"}`)
+  }
+})

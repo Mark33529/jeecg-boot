@@ -1,0 +1,28 @@
+package com.springboot.cloud.${bussiPackage}.${entityPackage}.entity.param;
+
+import com.springboot.cloud.common.core.entity.param.BaseParam;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.math.BigInteger;
+import java.util.Date;
+
+/**
+ * @ClassName ${entityName}QueryParam
+ * @Description ${tableVo.ftlDescription}
+ * @Author cj
+ * @Date ${.now?string["yyyy-MM-dd"]}
+ */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class ${entityName}QueryParam extends BaseParam {
+
+    <#list columns as po>
+    /**${po.filedComment}*/
+    private <#if po.fieldType=='java.sql.Blob'>byte[]<#else>${po.fieldType}</#if> ${po.fieldName};
+    </#list>
+
+}

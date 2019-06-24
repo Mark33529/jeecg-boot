@@ -1,0 +1,635 @@
+2019-06-19 12:06:37.076 [main] INFO  org.jeecg.JeecgApplication:50 - Starting JeecgApplication on Leo-hedeMacBook-Pro.local with PID 2220 (/Users/leohe/git/jeecg-boot/jeecg-boot/jeecg-boot-module-system/target/classes started by leohe in /Users/leohe/git/jeecg-boot/jeecg-boot)
+2019-06-19 12:06:37.088 [main] INFO  org.jeecg.JeecgApplication:679 - The following profiles are active: dev
+2019-06-19 12:06:40.677 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-19 12:06:40.682 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-19 12:06:40.822 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 106ms. Found 0 repository interfaces.
+2019-06-19 12:06:41.858 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroConfig' of type [org.jeecg.config.ShiroConfig$$EnhancerBySpringCGLIB$$63a10130] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:06:42.536 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroRealm' of type [org.jeecg.modules.shiro.authc.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:06:43.204 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:06:43.306 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:06:43.624 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$439b979a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:06:44.577 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:06:44.587 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$ad2a086b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:06:44.610 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:06:44.692 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:06:44.920 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:06:44.993 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$58b555e4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:06:46.255 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:06:46.656 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:06:46.818 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConfig' of type [org.jeecg.config.RedisConfig$$EnhancerBySpringCGLIB$$ae6f887a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:06:46.938 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$56b4754a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:06:46.982 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:06:48.715 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:90 - Tomcat initialized with port(s): 8010 (http)
+2019-06-19 12:06:48.767 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8010"]
+2019-06-19 12:06:48.796 [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2019-06-19 12:06:48.797 [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-06-19 12:06:48.838 [main] INFO  org.apache.catalina.core.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/leohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-06-19 12:06:49.371 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeecg-boot]:173 - Initializing Spring embedded WebApplicationContext
+2019-06-19 12:06:49.371 [main] INFO  org.springframework.web.context.ContextLoader:296 - Root WebApplicationContext: initialization completed in 12093 ms
+2019-06-19 12:06:50.831 [main] INFO  c.b.dynamic.datasource.DynamicDataSourceCreator:109 - 动态数据源-检测到druid存在,如配置中未指定type,druid会默认配置
+2019-06-19 12:06:52.434 [main] INFO  com.alibaba.druid.pool.DruidDataSource:930 - {dataSource-1,master} inited
+2019-06-19 12:06:52.435 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:189 - 初始共加载 1 个数据源
+2019-06-19 12:06:52.436 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:135 - 动态数据源-加载 master 成功
+2019-06-19 12:06:52.438 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:198 - 当前的默认数据源是单数据源，数据源名为 master
+2019-06-19 12:07:02.369 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quartzJobController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.jeecg.modules.quartz.controller.QuartzJobController] from ClassLoader [sun.misc.Launcher$AppClassLoader@135fbaa4]
+2019-06-19 12:07:02.372 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:175 - closing dynamicDatasource  ing....
+2019-06-19 12:07:02.386 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1825 - {dataSource-1} closed
+2019-06-19 12:07:02.425 [main] INFO  org.apache.catalina.core.StandardService:173 - Stopping service [Tomcat]
+2019-06-19 12:07:02.454 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:142 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-19 12:07:02.461 [main] ERROR org.springframework.boot.SpringApplication:858 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quartzJobController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.jeecg.modules.quartz.controller.QuartzJobController] from ClassLoader [sun.misc.Launcher$AppClassLoader@135fbaa4]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:265)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at org.jeecg.JeecgApplication.main(JeecgApplication.java:23)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.jeecg.modules.quartz.controller.QuartzJobController] from ClassLoader [sun.misc.Launcher$AppClassLoader@135fbaa4]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:686)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:583)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:568)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:248)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/quartz/SchedulerException
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:668)
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.quartz.SchedulerException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 25 common frames omitted
+2019-06-19 12:22:21.229 [main] INFO  org.jeecg.JeecgApplication:50 - Starting JeecgApplication on Leo-hedeMBP.lan with PID 4059 (/Users/leohe/git/jeecg-boot/jeecg-boot/jeecg-boot-module-system/target/classes started by leohe in /Users/leohe/git/jeecg-boot/jeecg-boot)
+2019-06-19 12:22:21.238 [main] INFO  org.jeecg.JeecgApplication:679 - The following profiles are active: dev
+2019-06-19 12:22:24.346 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-19 12:22:24.352 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-19 12:22:24.446 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 68ms. Found 0 repository interfaces.
+2019-06-19 12:22:25.110 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroConfig' of type [org.jeecg.config.ShiroConfig$$EnhancerBySpringCGLIB$$115d1bbc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:22:25.407 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroRealm' of type [org.jeecg.modules.shiro.authc.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:22:25.689 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:22:25.740 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:22:25.863 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f157b226] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:22:26.227 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:22:26.234 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$5ae622f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:22:26.250 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:22:26.260 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:22:26.290 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:22:26.304 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$6717070] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:22:26.698 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:22:26.914 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:22:26.941 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConfig' of type [org.jeecg.config.RedisConfig$$EnhancerBySpringCGLIB$$5c2ba306] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:22:26.996 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$4708fd6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:22:27.008 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 12:22:28.065 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:90 - Tomcat initialized with port(s): 8010 (http)
+2019-06-19 12:22:28.099 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8010"]
+2019-06-19 12:22:28.122 [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2019-06-19 12:22:28.123 [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-06-19 12:22:28.141 [main] INFO  org.apache.catalina.core.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/leohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-06-19 12:22:28.410 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeecg-boot]:173 - Initializing Spring embedded WebApplicationContext
+2019-06-19 12:22:28.411 [main] INFO  org.springframework.web.context.ContextLoader:296 - Root WebApplicationContext: initialization completed in 6982 ms
+2019-06-19 12:22:29.015 [main] INFO  c.b.dynamic.datasource.DynamicDataSourceCreator:109 - 动态数据源-检测到druid存在,如配置中未指定type,druid会默认配置
+2019-06-19 12:22:29.573 [main] INFO  com.alibaba.druid.pool.DruidDataSource:930 - {dataSource-1,master} inited
+2019-06-19 12:22:29.574 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:189 - 初始共加载 1 个数据源
+2019-06-19 12:22:29.576 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:135 - 动态数据源-加载 master 成功
+2019-06-19 12:22:29.577 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:198 - 当前的默认数据源是单数据源，数据源名为 master
+2019-06-19 12:22:33.332 [main] INFO  org.quartz.impl.StdSchedulerFactory:1208 - Using default implementation for ThreadExecutor
+2019-06-19 12:22:33.357 [main] INFO  org.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-06-19 12:22:33.358 [main] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.0 created.
+2019-06-19 12:22:33.366 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:672 - Using db table-based data access locking (synchronization).
+2019-06-19 12:22:33.369 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:145 - JobStoreCMT initialized.
+2019-06-19 12:22:33.371 [main] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2019-06-19 12:22:33.371 [main] INFO  org.quartz.impl.StdSchedulerFactory:1362 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-06-19 12:22:33.372 [main] INFO  org.quartz.impl.StdSchedulerFactory:1366 - Quartz scheduler version: 2.3.0
+2019-06-19 12:22:33.372 [main] INFO  org.quartz.core.QuartzScheduler:2287 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@73a5d86c
+2019-06-19 12:22:35.797 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver:59 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-06-19 12:22:36.088 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-06-19 12:22:36.579 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-19 12:22:37.932 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:160 - Context refreshed
+2019-06-19 12:22:37.974 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:163 - Found 1 custom documentation plugin(s)
+2019-06-19 12:22:38.025 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:41 - Scanning for api listing references
+2019-06-19 12:22:38.383 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean:726 - Starting Quartz Scheduler now
+2019-06-19 12:22:38.738 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:866 - Freed 0 triggers from 'acquired' / 'blocked' state.
+2019-06-19 12:22:38.765 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:876 - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2019-06-19 12:22:38.765 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:889 - Recovery complete.
+2019-06-19 12:22:38.768 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:896 - Removed 0 'complete' triggers.
+2019-06-19 12:22:38.771 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:901 - Removed 0 stale fired job entries.
+2019-06-19 12:22:38.773 [main] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-06-19 12:22:38.800 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8010"]
+2019-06-19 12:22:38.844 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 8010 (http) with context path '/jeecg-boot'
+2019-06-19 12:22:38.848 [main] INFO  org.jeecg.JeecgApplication:59 - Started JeecgApplication in 18.978 seconds (JVM running for 19.827)
+2019-06-19 12:22:38.879 [main] INFO  org.jeecg.JeecgApplication:28 - 
+----------------------------------------------------------
+	Application Jeecg-Boot is running! Access URLs:
+	Local: 		http://localhost:8010/jeecg-boot/
+	External: 	http://172.18.0.187:8010/jeecg-boot/
+	swagger-ui: 	http://172.18.0.187:8010/jeecg-boot/swagger-ui.html
+	Doc: 		http://172.18.0.187:8010/jeecg-boot/doc.html
+----------------------------------------------------------
+2019-06-19 12:22:52.634 [http-nio-8010-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeecg-boot]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-19 12:22:52.634 [http-nio-8010-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-19 12:22:52.705 [http-nio-8010-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:546 - Completed initialization in 70 ms
+2019-06-19 14:04:37.223 [http-nio-8010-exec-7] INFO  io.lettuce.core.EpollProvider:68 - Starting without optional epoll library
+2019-06-19 14:04:37.252 [http-nio-8010-exec-7] INFO  io.lettuce.core.KqueueProvider:70 - Starting without optional kqueue library
+2019-06-19 14:04:38.769 [http-nio-8010-exec-1] INFO  o.j.m.system.controller.SysPermissionController:118 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjA5MjYwNzgsInVzZXJuYW1lIjoiamVlY2cifQ.hHeEvn471vyI_buoW0joA6ZW_ZlVTJInlKQw0Kkp-GU
+2019-06-19 14:04:38.769 [http-nio-8010-exec-10] INFO  o.j.m.system.controller.SysPermissionController:118 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjA5MjYwNzYsInVzZXJuYW1lIjoiamVlY2cifQ.qoZnNvoOOu3BOYWRYGLnuZXZuJ36cVingdLtKPcyzqA
+2019-06-19 14:04:39.095 [http-nio-8010-exec-2] INFO  o.j.m.system.controller.SysPermissionController:118 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjA5MjYwNzYsInVzZXJuYW1lIjoiamVlY2cifQ.qoZnNvoOOu3BOYWRYGLnuZXZuJ36cVingdLtKPcyzqA
+2019-06-19 14:04:40.297 [http-nio-8010-exec-3] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190220/e1fe9925bc315c60addea1b98eb1cb1349547719_1550656892940.jpg (No such file or directory)
+2019-06-19 14:05:01.174 [http-nio-8010-exec-6] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190220/e1fe9925bc315c60addea1b98eb1cb1349547719_1550656892940.jpg (No such file or directory)
+2019-06-19 14:05:21.818 [http-nio-8010-exec-9] INFO  o.jeecg.modules.system.controller.LoginController:117 -  用户名:  jeecg,退出成功！ 
+2019-06-19 14:05:35.385 [http-nio-8010-exec-10] INFO  o.j.m.system.controller.SysPermissionController:118 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjA5MjYxMzUsInVzZXJuYW1lIjoiYWRtaW4ifQ.qEKGepbfor_m6cVBJjvC3N54bB8hhkvaK5JWutxVTiI
+2019-06-19 14:05:36.393 [http-nio-8010-exec-1] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:06:09.657 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:105 -  字典 key : 1
+2019-06-19 14:06:09.737 [http-nio-8010-exec-6] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:59 - 无缓存dictText的时候调用这里！
+2019-06-19 14:06:09.809 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:111 -  字典Val : 男
+2019-06-19 14:06:09.810 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:112 -  __翻译字典字段__ sex_dictText： 男
+2019-06-19 14:06:09.811 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:105 -  字典 key : 1
+2019-06-19 14:06:09.816 [http-nio-8010-exec-6] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:59 - 无缓存dictText的时候调用这里！
+2019-06-19 14:06:09.825 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:111 -  字典Val : 正常
+2019-06-19 14:06:09.826 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:112 -  __翻译字典字段__ status_dictText： 正常
+2019-06-19 14:06:09.834 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:105 -  字典 key : null
+2019-06-19 14:06:09.838 [http-nio-8010-exec-6] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:59 - 无缓存dictText的时候调用这里！
+2019-06-19 14:06:09.845 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:111 -  字典Val : null
+2019-06-19 14:06:09.845 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:112 -  __翻译字典字段__ sex_dictText： null
+2019-06-19 14:06:09.845 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:105 -  字典 key : 1
+2019-06-19 14:06:09.852 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:111 -  字典Val : 正常
+2019-06-19 14:06:09.853 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:112 -  __翻译字典字段__ status_dictText： 正常
+2019-06-19 14:06:09.857 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:105 -  字典 key : 2
+2019-06-19 14:06:09.860 [http-nio-8010-exec-6] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:59 - 无缓存dictText的时候调用这里！
+2019-06-19 14:06:09.875 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:111 -  字典Val : 女
+2019-06-19 14:06:09.875 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:112 -  __翻译字典字段__ sex_dictText： 女
+2019-06-19 14:06:09.876 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:105 -  字典 key : 1
+2019-06-19 14:06:09.878 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:111 -  字典Val : 正常
+2019-06-19 14:06:09.879 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:112 -  __翻译字典字段__ status_dictText： 正常
+2019-06-19 14:06:09.888 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:105 -  字典 key : 1
+2019-06-19 14:06:09.893 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:111 -  字典Val : 男
+2019-06-19 14:06:09.895 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:112 -  __翻译字典字段__ sex_dictText： 男
+2019-06-19 14:06:09.897 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:105 -  字典 key : 1
+2019-06-19 14:06:09.900 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:111 -  字典Val : 正常
+2019-06-19 14:06:09.901 [http-nio-8010-exec-6] INFO  org.jeecg.modules.system.aspect.DictAspect:112 -  __翻译字典字段__ status_dictText： 正常
+2019-06-19 14:06:10.039 [http-nio-8010-exec-8] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:06:10.039 [http-nio-8010-exec-7] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190220/e1fe9925bc315c60addea1b98eb1cb1349547719_1550656892940.jpg (No such file or directory)
+2019-06-19 14:06:10.040 [http-nio-8010-exec-9] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190401/20180607175028Fn1Lq7zw_1554118444672.png (No such file or directory)
+2019-06-19 14:06:10.044 [http-nio-8010-exec-10] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190314/ly-plate-e_1552531617500.png (No such file or directory)
+2019-06-19 14:06:16.408 [http-nio-8010-exec-2] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:06:16.476 [http-nio-8010-exec-5] INFO  o.j.modules.system.controller.SysDictController:129 -  dictCode : activiti_sync
+2019-06-19 14:06:16.512 [http-nio-8010-exec-5] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:45 - 无缓存dictCache的时候调用这里！
+2019-06-19 14:06:16.536 [http-nio-8010-exec-5] INFO  o.j.modules.system.controller.SysDictController:148 - Result(success=true, message=操作成功！, code=0, result=[DictModel(value=1, text=同步), DictModel(value=0, text=不同步)], timestamp=1560924376477)
+2019-06-19 14:06:46.310 [http-nio-8010-exec-10] INFO  org.jeecg.modules.shiro.authc.ShiroRealm:60 - ————权限认证 [ roles、permissions]————
+2019-06-19 14:06:46.339 [http-nio-8010-exec-10] INFO  o.j.modules.system.service.impl.SysUserServiceImpl:108 - -------通过数据库读取用户拥有的角色Rules------username： admin,Roles size: 1
+2019-06-19 14:06:46.357 [http-nio-8010-exec-10] INFO  o.j.modules.system.service.impl.SysUserServiceImpl:132 - -------通过数据库读取用户拥有的权限Perms------username： admin,Perms size: 8
+2019-06-19 14:06:46.362 [http-nio-8010-exec-10] INFO  org.jeecg.modules.shiro.authc.ShiroRealm:60 - ————权限认证 [ roles、permissions]————
+2019-06-19 14:06:46.409 [http-nio-8010-exec-10] INFO  o.j.m.system.controller.SysPermissionController:323 - ======角色授权成功=====耗时:42毫秒
+2019-06-19 14:07:10.375 [http-nio-8010-exec-5] INFO  o.j.modules.system.controller.SysDictController:129 -  dictCode : sex
+2019-06-19 14:07:10.380 [http-nio-8010-exec-5] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:45 - 无缓存dictCache的时候调用这里！
+2019-06-19 14:07:10.386 [http-nio-8010-exec-5] INFO  o.j.modules.system.controller.SysDictController:148 - Result(success=true, message=操作成功！, code=0, result=[DictModel(value=1, text=男), DictModel(value=2, text=女)], timestamp=1560924430376)
+2019-06-19 14:10:50.345 [http-nio-8010-exec-5] INFO  o.j.m.system.controller.SysPermissionController:118 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjA5MjYxMzUsInVzZXJuYW1lIjoiYWRtaW4ifQ.qEKGepbfor_m6cVBJjvC3N54bB8hhkvaK5JWutxVTiI
+2019-06-19 14:10:51.572 [http-nio-8010-exec-1] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:10:58.101 [http-nio-8010-exec-9] INFO  o.j.m.system.controller.SysPermissionController:118 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjA5MjYxMzUsInVzZXJuYW1lIjoiYWRtaW4ifQ.qEKGepbfor_m6cVBJjvC3N54bB8hhkvaK5JWutxVTiI
+2019-06-19 14:10:59.092 [http-nio-8010-exec-8] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:11:04.575 [http-nio-8010-exec-4] INFO  o.j.m.system.controller.SysPermissionController:118 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjA5MjYxMzUsInVzZXJuYW1lIjoiYWRtaW4ifQ.qEKGepbfor_m6cVBJjvC3N54bB8hhkvaK5JWutxVTiI
+2019-06-19 14:11:05.347 [http-nio-8010-exec-3] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:15:54.162 [http-nio-8010-exec-7] INFO  o.j.m.system.controller.SysPermissionController:118 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjA5MjYxMzUsInVzZXJuYW1lIjoiYWRtaW4ifQ.qEKGepbfor_m6cVBJjvC3N54bB8hhkvaK5JWutxVTiI
+2019-06-19 14:15:55.048 [http-nio-8010-exec-4] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:17:21.893 [http-nio-8010-exec-2] INFO  o.j.m.system.controller.SysPermissionController:118 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjA5MjYxMzUsInVzZXJuYW1lIjoiYWRtaW4ifQ.qEKGepbfor_m6cVBJjvC3N54bB8hhkvaK5JWutxVTiI
+2019-06-19 14:17:22.839 [http-nio-8010-exec-9] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:18:23.489 [http-nio-8010-exec-1] INFO  o.j.m.system.controller.SysPermissionController:118 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjA5MjYxMzUsInVzZXJuYW1lIjoiYWRtaW4ifQ.qEKGepbfor_m6cVBJjvC3N54bB8hhkvaK5JWutxVTiI
+2019-06-19 14:18:25.140 [http-nio-8010-exec-3] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:20:20.303 [http-nio-8010-exec-4] INFO  o.j.m.system.controller.SysPermissionController:118 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjA5MjYxMzUsInVzZXJuYW1lIjoiYWRtaW4ifQ.qEKGepbfor_m6cVBJjvC3N54bB8hhkvaK5JWutxVTiI
+2019-06-19 14:20:21.174 [http-nio-8010-exec-1] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:20:32.807 [http-nio-8010-exec-6] INFO  o.j.m.system.controller.SysPermissionController:118 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjA5MjYxMzUsInVzZXJuYW1lIjoiYWRtaW4ifQ.qEKGepbfor_m6cVBJjvC3N54bB8hhkvaK5JWutxVTiI
+2019-06-19 14:20:33.512 [http-nio-8010-exec-2] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:22:07.395 [http-nio-8010-exec-1] INFO  o.j.m.system.controller.SysPermissionController:118 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjA5MjYxMzUsInVzZXJuYW1lIjoiYWRtaW4ifQ.qEKGepbfor_m6cVBJjvC3N54bB8hhkvaK5JWutxVTiI
+2019-06-19 14:22:08.767 [http-nio-8010-exec-5] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:23:03.140 [http-nio-8010-exec-10] INFO  o.j.m.system.controller.SysPermissionController:118 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjA5MjYxMzUsInVzZXJuYW1lIjoiYWRtaW4ifQ.qEKGepbfor_m6cVBJjvC3N54bB8hhkvaK5JWutxVTiI
+2019-06-19 14:23:04.625 [http-nio-8010-exec-9] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:25:48.890 [http-nio-8010-exec-6] INFO  o.j.m.system.controller.SysPermissionController:118 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjA5MjYxMzUsInVzZXJuYW1lIjoiYWRtaW4ifQ.qEKGepbfor_m6cVBJjvC3N54bB8hhkvaK5JWutxVTiI
+2019-06-19 14:25:51.343 [http-nio-8010-exec-3] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:26:00.684 [http-nio-8010-exec-9] INFO  o.j.m.system.controller.SysPermissionController:118 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjA5MjYxMzUsInVzZXJuYW1lIjoiYWRtaW4ifQ.qEKGepbfor_m6cVBJjvC3N54bB8hhkvaK5JWutxVTiI
+2019-06-19 14:26:02.320 [http-nio-8010-exec-7] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:26:25.136 [http-nio-8010-exec-1] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:27:08.720 [http-nio-8010-exec-3] INFO  o.j.m.system.controller.SysPermissionController:118 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjA5MjYxMzUsInVzZXJuYW1lIjoiYWRtaW4ifQ.qEKGepbfor_m6cVBJjvC3N54bB8hhkvaK5JWutxVTiI
+2019-06-19 14:27:09.506 [http-nio-8010-exec-10] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:30:04.932 [http-nio-8010-exec-5] INFO  o.j.modules.system.controller.SysDictController:129 -  dictCode : sex
+2019-06-19 14:30:04.951 [http-nio-8010-exec-5] INFO  o.j.modules.system.controller.SysDictController:148 - Result(success=true, message=操作成功！, code=0, result=[DictModel(value=1, text=男), DictModel(value=2, text=女)], timestamp=1560925804934)
+2019-06-19 14:30:09.906 [http-nio-8010-exec-9] INFO  o.j.modules.system.controller.SysDictController:129 -  dictCode : sex
+2019-06-19 14:30:09.924 [http-nio-8010-exec-9] INFO  o.j.modules.system.controller.SysDictController:148 - Result(success=true, message=操作成功！, code=0, result=[DictModel(value=1, text=男), DictModel(value=2, text=女)], timestamp=1560925809906)
+2019-06-19 14:30:18.414 [http-nio-8010-exec-2] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:30:37.895 [http-nio-8010-exec-4] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:30:40.452 [http-nio-8010-exec-5] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:30:47.307 [http-nio-8010-exec-6] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:30:48.390 [http-nio-8010-exec-9] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 14:31:08.453 [Thread-6] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-06-19 14:31:08.467 [Thread-6] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-19 14:31:08.482 [Thread-6] INFO  o.s.scheduling.quartz.SchedulerFactoryBean:844 - Shutting down Quartz Scheduler
+2019-06-19 14:31:08.483 [Thread-6] INFO  org.quartz.core.QuartzScheduler:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-06-19 14:31:08.483 [Thread-6] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-06-19 14:31:08.484 [Thread-6] INFO  org.quartz.core.QuartzScheduler:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-06-19 14:31:08.492 [Thread-6] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:175 - closing dynamicDatasource  ing....
+2019-06-19 14:31:08.564 [Thread-6] INFO  com.alibaba.druid.pool.DruidDataSource:1825 - {dataSource-1} closed
+2019-06-19 14:31:09.326 [http-nio-8010-exec-2] WARN  org.apache.shiro.authc.AbstractAuthenticator:216 - Authentication failed for token submission [org.jeecg.modules.shiro.authc.JwtToken@6eb7c9f0].  Possible unexpected error? (Typical or expected login exceptions should extend from AuthenticationException).
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'sysUserServiceImpl': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.context.annotation.ContextAnnotationAutowireCandidateResolver$1.getTarget(ContextAnnotationAutowireCandidateResolver.java:90)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:193)
+	at com.sun.proxy.$Proxy66.getUserByName(Unknown Source)
+	at org.jeecg.modules.shiro.authc.ShiroRealm.checkUserTokenIsEffect(ShiroRealm.java:111)
+	at org.jeecg.modules.shiro.authc.ShiroRealm.doGetAuthenticationInfo(ShiroRealm.java:93)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:571)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:267)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:274)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+	at org.jeecg.modules.shiro.authc.aop.JwtFilter.executeLogin(JwtFilter.java:51)
+	at org.jeecg.modules.shiro.authc.aop.JwtFilter.isAccessAllowed(JwtFilter.java:34)
+	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162)
+	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:203)
+	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:178)
+	at org.jeecg.modules.shiro.authc.aop.JwtFilter.preHandle(JwtFilter.java:71)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-06-19 17:17:01.961 [main] INFO  org.jeecg.JeecgApplication:50 - Starting JeecgApplication on Leo-hedeMBP.lan with PID 42066 (/Users/leohe/git/jeecg-boot/jeecg-boot/jeecg-boot-module-system/target/classes started by leohe in /Users/leohe/git/jeecg-boot/jeecg-boot)
+2019-06-19 17:17:01.969 [main] INFO  org.jeecg.JeecgApplication:679 - The following profiles are active: dev
+2019-06-19 18:14:36.219 [main] INFO  org.jeecg.JeecgApplication:50 - Starting JeecgApplication on Leo-hedeMBP.lan with PID 45122 (/Users/leohe/git/jeecg-boot/jeecg-boot/jeecg-boot-module-system/target/classes started by leohe in /Users/leohe/git/jeecg-boot/jeecg-boot)
+2019-06-19 18:14:36.242 [main] INFO  org.jeecg.JeecgApplication:679 - The following profiles are active: dev
+2019-06-19 18:14:38.500 [main] ERROR org.springframework.boot.SpringApplication:858 - Application run failed
+org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'jeecgDemoMapper' for bean class [org.jeecg.modules.generator.mapper.JeecgDemoMapper] conflicts with existing, non-compatible bean definition of same name and class [org.jeecg.modules.demo.test.mapper.JeecgDemoMapper]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:348)
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.checkCandidate(ClassPathMapperScanner.java:236)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:286)
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:163)
+	at org.mybatis.spring.annotation.MapperScannerRegistrar.registerBeanDefinitions(MapperScannerRegistrar.java:104)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:364)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:363)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:145)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:117)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:327)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at org.jeecg.JeecgApplication.main(JeecgApplication.java:23)
+2019-06-19 18:15:45.849 [main] INFO  org.jeecg.JeecgApplication:50 - Starting JeecgApplication on Leo-hedeMBP.lan with PID 45187 (/Users/leohe/git/jeecg-boot/jeecg-boot/jeecg-boot-module-system/target/classes started by leohe in /Users/leohe/git/jeecg-boot/jeecg-boot)
+2019-06-19 18:15:45.858 [main] INFO  org.jeecg.JeecgApplication:679 - The following profiles are active: dev
+2019-06-19 18:15:47.651 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-19 18:15:47.658 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-19 18:15:47.736 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 55ms. Found 0 repository interfaces.
+2019-06-19 18:15:48.262 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroConfig' of type [org.jeecg.config.ShiroConfig$$EnhancerBySpringCGLIB$$211f4da1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:15:48.508 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroRealm' of type [org.jeecg.modules.shiro.authc.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:15:48.746 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:15:48.792 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:15:48.887 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$119e40b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:15:49.141 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:15:49.148 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$6aa854dc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:15:49.168 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:15:49.179 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:15:49.207 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:15:49.220 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$1633a255] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:15:49.486 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:15:49.628 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:15:49.662 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConfig' of type [org.jeecg.config.RedisConfig$$EnhancerBySpringCGLIB$$6bedd4eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:15:49.725 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$1432c1bb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:15:49.735 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:15:50.319 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:90 - Tomcat initialized with port(s): 8010 (http)
+2019-06-19 18:15:50.344 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8010"]
+2019-06-19 18:15:50.361 [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2019-06-19 18:15:50.362 [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-06-19 18:15:50.372 [main] INFO  org.apache.catalina.core.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/leohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-06-19 18:15:50.507 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeecg-boot]:173 - Initializing Spring embedded WebApplicationContext
+2019-06-19 18:15:50.508 [main] INFO  org.springframework.web.context.ContextLoader:296 - Root WebApplicationContext: initialization completed in 4534 ms
+2019-06-19 18:15:50.974 [main] INFO  c.b.dynamic.datasource.DynamicDataSourceCreator:109 - 动态数据源-检测到druid存在,如配置中未指定type,druid会默认配置
+2019-06-19 18:15:51.424 [main] INFO  com.alibaba.druid.pool.DruidDataSource:930 - {dataSource-1,master} inited
+2019-06-19 18:15:51.425 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:189 - 初始共加载 1 个数据源
+2019-06-19 18:15:51.426 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:135 - 动态数据源-加载 master 成功
+2019-06-19 18:15:51.427 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:198 - 当前的默认数据源是单数据源，数据源名为 master
+2019-06-19 18:15:54.918 [main] INFO  org.quartz.impl.StdSchedulerFactory:1208 - Using default implementation for ThreadExecutor
+2019-06-19 18:15:54.938 [main] INFO  org.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-06-19 18:15:54.939 [main] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.0 created.
+2019-06-19 18:15:54.944 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:672 - Using db table-based data access locking (synchronization).
+2019-06-19 18:15:54.947 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:145 - JobStoreCMT initialized.
+2019-06-19 18:15:54.949 [main] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2019-06-19 18:15:54.950 [main] INFO  org.quartz.impl.StdSchedulerFactory:1362 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-06-19 18:15:54.950 [main] INFO  org.quartz.impl.StdSchedulerFactory:1366 - Quartz scheduler version: 2.3.0
+2019-06-19 18:15:54.951 [main] INFO  org.quartz.core.QuartzScheduler:2287 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@409395b9
+2019-06-19 18:15:56.622 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/Users/leohe/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/Users/leohe/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'onlineDesignController' method 
+public org.jeecg.common.api.vo.Result org.jeecg.modules.generator.controller.OnlineDesignController.add(com.alibaba.fastjson.JSONObject)
+to {POST /test/jeecgDemo/add}: There is already 'jeecgDemoController' bean method
+public org.jeecg.common.api.vo.Result<org.jeecg.modules.demo.test.entity.JeecgDemo> org.jeecg.modules.demo.test.controller.JeecgDemoController.add(org.jeecg.modules.demo.test.entity.JeecgDemo) mapped.
+2019-06-19 18:15:56.625 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean:844 - Shutting down Quartz Scheduler
+2019-06-19 18:15:56.626 [main] INFO  org.quartz.core.QuartzScheduler:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-06-19 18:15:56.627 [main] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-06-19 18:15:56.627 [main] INFO  org.quartz.core.QuartzScheduler:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-06-19 18:15:56.631 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:175 - closing dynamicDatasource  ing....
+2019-06-19 18:15:56.639 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1825 - {dataSource-1} closed
+2019-06-19 18:15:56.660 [main] INFO  org.apache.catalina.core.StandardService:173 - Stopping service [Tomcat]
+2019-06-19 18:15:56.681 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:142 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-19 18:15:56.685 [main] ERROR org.springframework.boot.SpringApplication:858 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/Users/leohe/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/Users/leohe/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'onlineDesignController' method 
+public org.jeecg.common.api.vo.Result org.jeecg.modules.generator.controller.OnlineDesignController.add(com.alibaba.fastjson.JSONObject)
+to {POST /test/jeecgDemo/add}: There is already 'jeecgDemoController' bean method
+public org.jeecg.common.api.vo.Result<org.jeecg.modules.demo.test.entity.JeecgDemo> org.jeecg.modules.demo.test.controller.JeecgDemoController.add(org.jeecg.modules.demo.test.entity.JeecgDemo) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1171)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at org.jeecg.JeecgApplication.main(JeecgApplication.java:23)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/Users/leohe/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'onlineDesignController' method 
+public org.jeecg.common.api.vo.Result org.jeecg.modules.generator.controller.OnlineDesignController.add(com.alibaba.fastjson.JSONObject)
+to {POST /test/jeecgDemo/add}: There is already 'jeecgDemoController' bean method
+public org.jeecg.common.api.vo.Result<org.jeecg.modules.demo.test.entity.JeecgDemo> org.jeecg.modules.demo.test.controller.JeecgDemoController.add(org.jeecg.modules.demo.test.entity.JeecgDemo) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1171)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1463)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'onlineDesignController' method 
+public org.jeecg.common.api.vo.Result org.jeecg.modules.generator.controller.OnlineDesignController.add(com.alibaba.fastjson.JSONObject)
+to {POST /test/jeecgDemo/add}: There is already 'jeecgDemoController' bean method
+public org.jeecg.common.api.vo.Result<org.jeecg.modules.demo.test.entity.JeecgDemo> org.jeecg.modules.demo.test.controller.JeecgDemoController.add(org.jeecg.modules.demo.test.entity.JeecgDemo) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1463)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 36 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'onlineDesignController' method 
+public org.jeecg.common.api.vo.Result org.jeecg.modules.generator.controller.OnlineDesignController.add(com.alibaba.fastjson.JSONObject)
+to {POST /test/jeecgDemo/add}: There is already 'jeecgDemoController' bean method
+public org.jeecg.common.api.vo.Result<org.jeecg.modules.demo.test.entity.JeecgDemo> org.jeecg.modules.demo.test.controller.JeecgDemoController.add(org.jeecg.modules.demo.test.entity.JeecgDemo) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:618)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:586)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:312)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:282)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:280)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:252)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:211)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:199)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1821)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758)
+	... 50 common frames omitted
+2019-06-19 18:16:38.043 [main] INFO  org.jeecg.JeecgApplication:50 - Starting JeecgApplication on Leo-hedeMBP.lan with PID 45241 (/Users/leohe/git/jeecg-boot/jeecg-boot/jeecg-boot-module-system/target/classes started by leohe in /Users/leohe/git/jeecg-boot/jeecg-boot)
+2019-06-19 18:16:38.051 [main] INFO  org.jeecg.JeecgApplication:679 - The following profiles are active: dev
+2019-06-19 18:16:39.964 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-19 18:16:39.977 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-19 18:16:40.096 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 91ms. Found 0 repository interfaces.
+2019-06-19 18:16:40.808 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroConfig' of type [org.jeecg.config.ShiroConfig$$EnhancerBySpringCGLIB$$8d6ef9de] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:16:41.065 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroRealm' of type [org.jeecg.modules.shiro.authc.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:16:41.321 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:16:41.367 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:16:41.475 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6d699048] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:16:41.760 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:16:41.768 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$d6f80119] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:16:41.787 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:16:41.796 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:16:41.834 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:16:41.856 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$82834e92] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:16:42.212 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:16:42.369 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:16:42.399 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConfig' of type [org.jeecg.config.RedisConfig$$EnhancerBySpringCGLIB$$d83d8128] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:16:42.466 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$80826df8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:16:42.474 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 18:16:43.129 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:90 - Tomcat initialized with port(s): 8010 (http)
+2019-06-19 18:16:43.158 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8010"]
+2019-06-19 18:16:43.183 [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2019-06-19 18:16:43.186 [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-06-19 18:16:43.202 [main] INFO  org.apache.catalina.core.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/leohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-06-19 18:16:43.390 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeecg-boot]:173 - Initializing Spring embedded WebApplicationContext
+2019-06-19 18:16:43.391 [main] INFO  org.springframework.web.context.ContextLoader:296 - Root WebApplicationContext: initialization completed in 5242 ms
+2019-06-19 18:16:43.908 [main] INFO  c.b.dynamic.datasource.DynamicDataSourceCreator:109 - 动态数据源-检测到druid存在,如配置中未指定type,druid会默认配置
+2019-06-19 18:16:44.457 [main] INFO  com.alibaba.druid.pool.DruidDataSource:930 - {dataSource-1,master} inited
+2019-06-19 18:16:44.460 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:189 - 初始共加载 1 个数据源
+2019-06-19 18:16:44.461 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:135 - 动态数据源-加载 master 成功
+2019-06-19 18:16:44.462 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:198 - 当前的默认数据源是单数据源，数据源名为 master
+2019-06-19 18:16:48.521 [main] INFO  org.quartz.impl.StdSchedulerFactory:1208 - Using default implementation for ThreadExecutor
+2019-06-19 18:16:48.542 [main] INFO  org.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-06-19 18:16:48.543 [main] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.0 created.
+2019-06-19 18:16:48.547 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:672 - Using db table-based data access locking (synchronization).
+2019-06-19 18:16:48.550 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:145 - JobStoreCMT initialized.
+2019-06-19 18:16:48.552 [main] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2019-06-19 18:16:48.552 [main] INFO  org.quartz.impl.StdSchedulerFactory:1362 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-06-19 18:16:48.553 [main] INFO  org.quartz.impl.StdSchedulerFactory:1366 - Quartz scheduler version: 2.3.0
+2019-06-19 18:16:48.553 [main] INFO  org.quartz.core.QuartzScheduler:2287 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@42066f0d
+2019-06-19 18:16:50.913 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver:59 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-06-19 18:16:51.151 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-06-19 18:16:51.574 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-19 18:16:52.798 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:160 - Context refreshed
+2019-06-19 18:16:52.856 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:163 - Found 1 custom documentation plugin(s)
+2019-06-19 18:16:52.924 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:41 - Scanning for api listing references
+2019-06-19 18:16:53.240 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean:726 - Starting Quartz Scheduler now
+2019-06-19 18:16:53.581 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:866 - Freed 0 triggers from 'acquired' / 'blocked' state.
+2019-06-19 18:16:53.594 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:876 - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2019-06-19 18:16:53.594 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:889 - Recovery complete.
+2019-06-19 18:16:53.596 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:896 - Removed 0 'complete' triggers.
+2019-06-19 18:16:53.599 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:901 - Removed 0 stale fired job entries.
+2019-06-19 18:16:53.600 [main] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-06-19 18:16:53.637 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8010"]
+2019-06-19 18:16:53.689 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 8010 (http) with context path '/jeecg-boot'
+2019-06-19 18:16:53.693 [main] INFO  org.jeecg.JeecgApplication:59 - Started JeecgApplication in 16.93 seconds (JVM running for 17.568)
+2019-06-19 18:16:53.724 [main] INFO  org.jeecg.JeecgApplication:28 - 
+----------------------------------------------------------
+	Application Jeecg-Boot is running! Access URLs:
+	Local: 		http://localhost:8010/jeecg-boot/
+	External: 	http://172.18.0.187:8010/jeecg-boot/
+	swagger-ui: 	http://172.18.0.187:8010/jeecg-boot/swagger-ui.html
+	Doc: 		http://172.18.0.187:8010/jeecg-boot/doc.html
+----------------------------------------------------------
+2019-06-19 18:16:58.322 [http-nio-8010-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeecg-boot]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-19 18:16:58.324 [http-nio-8010-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-19 18:16:58.359 [http-nio-8010-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:546 - Completed initialization in 34 ms
+2019-06-19 18:16:59.032 [http-nio-8010-exec-1] INFO  io.lettuce.core.EpollProvider:68 - Starting without optional epoll library
+2019-06-19 18:16:59.034 [http-nio-8010-exec-1] INFO  io.lettuce.core.KqueueProvider:70 - Starting without optional kqueue library
+2019-06-19 18:16:59.601 [http-nio-8010-exec-2] INFO  o.j.m.system.controller.SysPermissionController:118 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjA5NDEyMTgsInVzZXJuYW1lIjoiYWRtaW4ifQ.qEFcHR-CYO6-0PlYOCe79Ufip6-FmtdJt9-kTULy7H0
+2019-06-19 18:17:00.613 [http-nio-8010-exec-3] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 18:17:25.346 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:105 -  字典 key : 1
+2019-06-19 18:17:25.406 [http-nio-8010-exec-1] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:59 - 无缓存dictText的时候调用这里！
+2019-06-19 18:17:25.462 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:111 -  字典Val : 男
+2019-06-19 18:17:25.463 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:112 -  __翻译字典字段__ sex_dictText： 男
+2019-06-19 18:17:25.464 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:105 -  字典 key : 1
+2019-06-19 18:17:25.472 [http-nio-8010-exec-1] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:59 - 无缓存dictText的时候调用这里！
+2019-06-19 18:17:25.483 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:111 -  字典Val : 正常
+2019-06-19 18:17:25.484 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:112 -  __翻译字典字段__ status_dictText： 正常
+2019-06-19 18:17:25.489 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:105 -  字典 key : null
+2019-06-19 18:17:25.494 [http-nio-8010-exec-1] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:59 - 无缓存dictText的时候调用这里！
+2019-06-19 18:17:25.501 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:111 -  字典Val : null
+2019-06-19 18:17:25.502 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:112 -  __翻译字典字段__ sex_dictText： null
+2019-06-19 18:17:25.503 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:105 -  字典 key : 1
+2019-06-19 18:17:25.508 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:111 -  字典Val : 正常
+2019-06-19 18:17:25.508 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:112 -  __翻译字典字段__ status_dictText： 正常
+2019-06-19 18:17:25.513 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:105 -  字典 key : 2
+2019-06-19 18:17:25.516 [http-nio-8010-exec-1] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:59 - 无缓存dictText的时候调用这里！
+2019-06-19 18:17:25.523 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:111 -  字典Val : 女
+2019-06-19 18:17:25.524 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:112 -  __翻译字典字段__ sex_dictText： 女
+2019-06-19 18:17:25.525 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:105 -  字典 key : 1
+2019-06-19 18:17:25.529 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:111 -  字典Val : 正常
+2019-06-19 18:17:25.530 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:112 -  __翻译字典字段__ status_dictText： 正常
+2019-06-19 18:17:25.533 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:105 -  字典 key : 1
+2019-06-19 18:17:25.535 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:111 -  字典Val : 男
+2019-06-19 18:17:25.536 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:112 -  __翻译字典字段__ sex_dictText： 男
+2019-06-19 18:17:25.540 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:105 -  字典 key : 1
+2019-06-19 18:17:25.542 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:111 -  字典Val : 正常
+2019-06-19 18:17:25.543 [http-nio-8010-exec-1] INFO  org.jeecg.modules.system.aspect.DictAspect:112 -  __翻译字典字段__ status_dictText： 正常
+2019-06-19 18:17:25.694 [http-nio-8010-exec-2] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 18:17:25.694 [http-nio-8010-exec-3] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190401/20180607175028Fn1Lq7zw_1554118444672.png (No such file or directory)
+2019-06-19 18:17:25.697 [http-nio-8010-exec-5] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190220/e1fe9925bc315c60addea1b98eb1cb1349547719_1550656892940.jpg (No such file or directory)
+2019-06-19 18:17:25.710 [http-nio-8010-exec-4] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190314/ly-plate-e_1552531617500.png (No such file or directory)
+2019-06-19 18:17:28.195 [http-nio-8010-exec-7] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败D:/upFiles/user/20190119/logo-2_1547868176839.png (No such file or directory)
+2019-06-19 18:17:28.260 [http-nio-8010-exec-10] INFO  o.j.modules.system.controller.SysDictController:129 -  dictCode : activiti_sync
+2019-06-19 18:17:28.282 [http-nio-8010-exec-10] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:45 - 无缓存dictCache的时候调用这里！
+2019-06-19 18:17:28.298 [http-nio-8010-exec-10] INFO  o.j.modules.system.controller.SysDictController:148 - Result(success=true, message=操作成功！, code=0, result=[DictModel(value=1, text=同步), DictModel(value=0, text=不同步)], timestamp=1560939448263)
+2019-06-19 19:33:35.175 [Thread-6] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-06-19 19:33:35.188 [Thread-6] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-19 19:33:35.194 [Thread-6] INFO  o.s.scheduling.quartz.SchedulerFactoryBean:844 - Shutting down Quartz Scheduler
+2019-06-19 19:33:35.195 [Thread-6] INFO  org.quartz.core.QuartzScheduler:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-06-19 19:33:35.196 [Thread-6] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-06-19 19:33:35.199 [Thread-6] INFO  org.quartz.core.QuartzScheduler:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-06-19 19:33:35.203 [Thread-6] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:175 - closing dynamicDatasource  ing....
+2019-06-19 19:33:35.220 [Thread-6] INFO  com.alibaba.druid.pool.DruidDataSource:1825 - {dataSource-1} closed

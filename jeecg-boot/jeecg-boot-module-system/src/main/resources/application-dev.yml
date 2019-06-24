@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8010
   servlet:
     context-path: /jeecg-boot
     compression:
@@ -85,7 +85,7 @@ spring:
         connectionProperties: druid.stat.mergeSql\=true;druid.stat.slowSqlMillis\=5000
       datasource:
         master:
-          url: jdbc:mysql://127.0.0.1:3306/jeecg-boot?characterEncoding=UTF-8&useUnicode=true&useSSL=false
+          url: jdbc:mysql://127.0.0.1:8889/jeecg-boot?characterEncoding=UTF-8&useUnicode=true&useSSL=false
           username: root
           password: root
           driver-class-name: com.mysql.jdbc.Driver
@@ -119,3 +119,15 @@ jeecg :
     upload: D://upFiles
     #webapp文件路径
     webapp: D://webapp
+
+#代码模版及生成代码文件路径
+online :
+  template1: com.springboot.cloud.${bussiPackage}.${entityPackage}
+  template2: one.java.${bussiPackage}.${entityPackage}
+  template3: one.java.${bussiPackage}.${entityPackage}
+  template :
+    path: /Users/leohe/git/jeecg-boot/jeecg-boot/jeecg-boot-module-system/src/main/resources/skyline/code-template/
+  code :
+    path: /Users/leohe/git/jeecg-boot/jeecg-boot/jeecg-boot-module-system/src/main/java/
+
+

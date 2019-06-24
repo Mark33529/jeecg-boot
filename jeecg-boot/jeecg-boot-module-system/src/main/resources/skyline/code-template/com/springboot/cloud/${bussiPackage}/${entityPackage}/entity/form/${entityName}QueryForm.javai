@@ -1,0 +1,44 @@
+package com.springboot.cloud.${bussiPackage}.${entityPackage}.entity.form;
+
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.springboot.cloud.common.core.entity.form.BaseQueryForm;
+import com.springboot.cloud.${bussiPackage}.${entityPackage}.entity.param.${entityName}QueryParam;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Past;
+import java.math.BigInteger;
+import java.util.Date;
+
+/**
+ * @ClassName ${entityName}QueryForm
+ * @Description ${tableVo.ftlDescription}
+ * @Author cj
+ * @Date ${.now?string["yyyy-MM-dd"]}
+ */
+@ApiModel
+@Data
+public class ${entityName}QueryForm extends BaseQueryForm<${entityName}QueryParam> {
+
+    <#list columns as po>
+    /**${po.filedComment}*/
+    <#if po.primary == 'Y'>
+    @TableId(type = IdType.AUTO)
+    <#else>
+    <#if po.fieldType =='java.util.Date'>
+    <#if po.fieldDbType =='date'>
+    @DateTimeFormat(pattern="yyyy-MM-dd")
+    <#elseif po.fieldDbType =='datetime'>
+    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
+    </#if>
+    </#if>
+    </#if>
+    @ApiModelProperty(value = "${po.filedComment}")
+    private <#if po.fieldType=='java.sql.Blob'>byte[]<#else>${po.fieldType}</#if> ${po.fieldName};
+    </#list>
+
+}

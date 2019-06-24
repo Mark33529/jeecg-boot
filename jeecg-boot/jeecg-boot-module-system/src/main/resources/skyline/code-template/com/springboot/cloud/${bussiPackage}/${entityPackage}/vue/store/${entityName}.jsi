@@ -1,0 +1,15 @@
+export const state = () => ({
+  ${entityName?uncap_first}Mdl: {}
+})
+
+export const mutations = {
+  update${entityName} (state, params) {
+    state.${entityName?uncap_first}Mdl = params
+  }
+}
+
+export const getters = {
+  ${entityName?uncap_first}Mdl (state) {
+    return state.${entityName?uncap_first}Mdl
+  }
+}

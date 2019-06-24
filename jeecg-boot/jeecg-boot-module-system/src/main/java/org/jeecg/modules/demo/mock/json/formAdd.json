@@ -1,0 +1,66 @@
+{
+  "tableName": "t_question",
+  "description": "试卷信息表",
+  "entityName": "Exam",
+  "businessName": "huwai",
+  "packageName": "chujuan",
+  "primaryKeyPolicy": 1,
+  "isPaging": true,
+  "columns": [
+    {
+      "fieldName": "id",
+      "filedComment": "这是一段描述",
+      "fieldDbType" : "varchar",
+      "fieldLength": 32,
+      "decimalPoint": 0,
+      "default": "默认值",
+      "primary": "Y",
+      "nullable": "N",
+      "sequence": 1
+    },
+    {
+      "fieldName": "username",
+      "filedComment": "这是一段描述",
+      "fieldDbType" : "varchar",
+      "fieldLength": 32,
+      "decimalPoint": 0,
+      "default": "默认值",
+      "primary": "N",
+      "nullable": "N",
+      "sequence": 2
+    },
+    {
+      "fieldName": "mobile",
+      "filedComment": "这是一段描述",
+      "fieldDbType" : "varchar",
+      "fieldLength": 32,
+      "decimalPoint": 0,
+      "default": "默认值",
+      "primary": "N",
+      "nullable": "Y",
+      "sequence": 3
+    },
+    {
+      "fieldName": "address",
+      "filedComment": "这是一段描述",
+      "fieldDbType" : "varchar",
+      "fieldLength": 32,
+      "decimalPoint": 0,
+      "default": "默认值",
+      "primary": "N",
+      "nullable": "Y",
+      "sequence": 1
+    },
+    {
+      "fieldName": "sex",
+      "filedComment": "这是一段描述",
+      "fieldDbType" : "int",
+      "fieldLength": 10,
+      "decimalPoint": 0,
+      "default": "默认值",
+      "primary": "N",
+      "nullable": "Y",
+      "sequence": 4
+    },
+  ]
+}

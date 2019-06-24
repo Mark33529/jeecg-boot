@@ -1,0 +1,99 @@
+package com.springboot.cloud.${bussiPackage}.${entityPackage}.service;
+
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.springboot.cloud.${bussiPackage}.${entityPackage}.dao.${entityName}Mapper;
+import com.springboot.cloud.${bussiPackage}.${entityPackage}.entity.param.${entityName}QueryParam;
+import com.springboot.cloud.${bussiPackage}.${entityPackage}.entity.po.${entityName};
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+/**
+ * @ClassName ${entityName}ServiceImpl
+ * @Description ${tableVo.ftlDescription}
+ * @Author cj
+ * @Date ${.now?string["yyyy-MM-dd"]}
+ */
+@SuppressWarnings("ALL")
+@Service
+@Slf4j
+@RefreshScope
+public class ${entityName}ServiceImpl implements I${entityName}Service {
+
+    @Autowired
+    private ${entityName}Mapper ${entityName?uncap_first}Mapper;
+
+    @SuppressWarnings("AlibabaCommentsMustBeJavadocFormat")
+    private String value;
+
+    @Override
+    public long add(${entityName} ${entityName?uncap_first}) {
+        return ${entityName?uncap_first}Mapper.insert(${entityName?uncap_first});
+    }
+
+    @Override
+    @CacheEvict(value = "${entityName?uncap_first}", key = "#root.targetClass+'-'+#id")
+    public void delete(long id) {
+        ${entityName?uncap_first}Mapper.deleteById(id);
+    }
+
+    @Override
+    @CacheEvict(value = "${entityName?uncap_first}", key = "#root.targetClass+'-'+#${entityName?uncap_first}.id")
+    public void update(${entityName} ${entityName?uncap_first}) {
+        ${entityName?uncap_first}Mapper.updateById(${entityName?uncap_first});
+    }
+
+    @Override
+    @Cacheable(value = "${entityName?uncap_first}", key = "#root.targetClass+'-'+#id")
+    public ${entityName} get(long id) {
+        log.info("value:{}", value);
+        return ${entityName?uncap_first}Mapper.selectById(id);
+    }
+
+    @Override
+    public IPage query(Page page, ${entityName}QueryParam ${entityName?uncap_first}QueryParam) {
+        QueryWrapper<${entityName}> queryWrapper = new QueryWrapper<>();
+        queryWrapper
+                .ge(null != productQueryParam.getStartDate(), "start_date", productQueryParam.getStartDate())
+                .le(null != productQueryParam.getEndDate(), "end_date", productQueryParam.getEndDate())
+                .eq(null != productQueryParam.getDate1(), "date1",productQueryParam.getDate1())
+                .eq(null != productQueryParam.getBint1(), "bint1",productQueryParam.getBint1())
+                .eq(null != productQueryParam.getDecimal1(), "decimal1",productQueryParam.getDecimal1())
+                .eq(null != productQueryParam.getInt1(), "int1",productQueryParam.getInt1())
+                .eq(null != productQueryParam.getName(), "name",productQueryParam.getName())
+                .like(null != productQueryParam.getDescription(), "description",productQueryParam.getDescription());
+        if(${entityName?uncap_first}QueryParam.getEnabled()==1){
+            queryWrapper.eq("enabled", true);
+        }else if(${entityName?uncap_first}QueryParam.getEnabled()==2){
+            queryWrapper.eq("enabled", false);
+        }
+        return ${entityName?uncap_first}Mapper.selectPage(page,queryWrapper);
+    }
+
+    @Override
+    public List<${entityName}> query(${entityName}QueryParam ${entityName?uncap_first}QueryParam) {
+        QueryWrapper<${entityName}> queryWrapper = new QueryWrapper<>();
+        queryWrapper
+                .ge(null != productQueryParam.getStartDate(), "start_date", productQueryParam.getStartDate())
+                .le(null != productQueryParam.getEndDate(), "end_date", productQueryParam.getEndDate())
+                .eq(null != productQueryParam.getDate1(), "date1",productQueryParam.getDate1())
+                .eq(null != productQueryParam.getBint1(), "bint1",productQueryParam.getBint1())
+                .eq(null != productQueryParam.getDecimal1(), "decimal1",productQueryParam.getDecimal1())
+                .eq(null != productQueryParam.getInt1(), "int1",productQueryParam.getInt1())
+                .eq(null != productQueryParam.getName(), "name",productQueryParam.getName())
+                .like(null != productQueryParam.getDescription(), "description",productQueryParam.getDescription());
+        if(${entityName?uncap_first}QueryParam.getEnabled()==1){
+            queryWrapper.eq("enabled", true);
+        }else if(${entityName?uncap_first}QueryParam.getEnabled()==2){
+            queryWrapper.eq("enabled", false);
+        }
+        return ${entityName?uncap_first}Mapper.selectList(queryWrapper);
+    }
+}

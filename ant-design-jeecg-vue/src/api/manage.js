@@ -8,6 +8,12 @@ const api = {
   permissionNoPager: '/api/permission/no-pager'
 }
 
+const online = {
+  service: '/online/service',
+  permission: '/api/permission',
+  permissionNoPager: '/api/permission/no-pager'
+}
+
 export default api
 
 //post
@@ -112,3 +118,16 @@ export function downFile(url,parameter){
   })
 }
 
+/////////////////////////////// 在线开发模块 start /////////////////////////////////
+/**
+ * 表单开发列表
+ */
+export function getCgformList(parameter) {
+  return axios({
+    url: online.service,
+    method: 'get',
+    params: parameter
+  })
+}
+
+ /////////////////////////////// 在线开发模块 end /////////////////////////////////

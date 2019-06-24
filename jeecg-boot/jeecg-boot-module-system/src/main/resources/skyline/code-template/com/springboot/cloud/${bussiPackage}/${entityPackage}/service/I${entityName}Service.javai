@@ -1,0 +1,67 @@
+package com.springboot.cloud.${bussiPackage}.${entityPackage}.service;
+
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.springboot.cloud.${bussiPackage}.${entityPackage}.entity.param.${entityName}QueryParam;
+import com.springboot.cloud.${bussiPackage}.${entityPackage}.entity.po.${entityName};
+
+import java.util.List;
+
+/**
+ * @ClassName I${entityName}Service
+ * @Description ${tableVo.ftlDescription}
+ * @Author cj
+ * @Date ${.now?string["yyyy-MM-dd"]}
+ */
+public interface I${entityName}Service {
+
+    /**
+     * ${tableVo.ftlDescription} - 获取
+     *
+     * @param id
+     * @return ${entityName}
+     */
+    ${entityName} get(long id);
+
+    /**
+     * ${tableVo.ftlDescription} - 新增
+     *
+     * @param ${entityName?uncap_first}
+     * @return long
+     */
+    long add(${entityName} ${entityName?uncap_first});
+
+    /**
+     * ${tableVo.ftlDescription} - 查询
+     *
+     * @param ${entityName?uncap_first}QueryParam
+     * @return IPage
+     */
+    IPage query(Page page, ${entityName}QueryParam ${entityName?uncap_first}QueryParam);
+
+
+    /**
+     * ${tableVo.ftlDescription} - 查询
+     *
+     * @param ${entityName?uncap_first}QueryParam
+     * @return List<${entityName}>
+     */
+    List<${entityName}> query(${entityName}QueryParam ${entityName?uncap_first}QueryParam);
+
+    /**
+     * ${tableVo.ftlDescription} - 更新信息
+     *
+     * @param product
+     * @return void
+     */
+    void update(${entityName} ${entityName?uncap_first});
+
+    /**
+     * ${tableVo.ftlDescription} - 根据id删除
+     *
+     * @param id
+     * @return void
+     */
+    void delete(long id);
+
+}

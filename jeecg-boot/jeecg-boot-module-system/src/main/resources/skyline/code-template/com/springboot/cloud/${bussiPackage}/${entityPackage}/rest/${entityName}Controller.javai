@@ -1,0 +1,112 @@
+package com.springboot.cloud.${bussiPackage}.${entityPackage}.rest;
+
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.springboot.cloud.common.core.entity.po.Role;
+import com.springboot.cloud.common.core.entity.vo.Result;
+import com.springboot.cloud.common.core.entity.vo.RoleVo;
+import com.springboot.cloud.${bussiPackage}.${entityPackage}.entity.form.${entityName}Form;
+import com.springboot.cloud.${bussiPackage}.${entityPackage}.entity.form.${entityName}QueryForm;
+import com.springboot.cloud.${bussiPackage}.${entityPackage}.entity.param.${entityName}QueryParam;
+import com.springboot.cloud.${bussiPackage}.${entityPackage}.entity.po.${entityName};
+import com.springboot.cloud.${bussiPackage}.${entityPackage}.service.I${entityName}Service;
+import io.swagger.annotations.*;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
+import java.util.List;
+import java.util.stream.Collectors;
+
+/**
+ * @ClassName ${entityName}Controller
+ * @Description ${tableVo.ftlDescription}
+ * @Author cj
+ * @Date ${.now?string["yyyy-MM-dd"]}
+ */
+@RestController
+@RequestMapping("/${entityName?uncap_first}")
+@Api("${entityName?uncap_first}")
+@Slf4j
+public class ${entityName}Controller {
+
+    @Autowired
+    private I${entityName}Service ${entityName?uncap_first}Service;
+
+    @ApiOperation(value = "新增${tableVo.ftlDescription}", notes = "新增一个${tableVo.ftlDescription}")
+    @ApiImplicitParam(name = "${entityName?uncap_first}Form", value = "新增产品form表单", required = true, dataType = "${entityName}Form")
+    @PostMapping
+    public Result add(@Valid ${entityName}Form ${entityName?uncap_first}Form) {
+        log.info("name:{}", ${entityName?uncap_first}Form);
+        ${entityName} ${entityName?uncap_first} = ${entityName?uncap_first}Form.toPo(${entityName}.class);
+        return Result.success(${entityName?uncap_first}Service.add(${entityName?uncap_first}));
+    }
+
+    @ApiOperation(value = "删除${tableVo.ftlDescription}", notes = "根据url的id来指定删除对象")
+    @ApiImplicitParam(paramType = "path", name = "id", value = "产品ID", required = true, dataType = "long")
+    @DeleteMapping(value = "/{id}")
+    public Result delete(@PathVariable long id) {
+        ${entityName?uncap_first}Service.delete(id);
+        return Result.success();
+    }
+
+    @ApiOperation(value = "修改${tableVo.ftlDescription}", notes = "修改指定${tableVo.ftlDescription}信息")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "id", value = "${tableVo.ftlDescription}ID", required = true, dataType = "long"),
+            @ApiImplicitParam(name = "${entityName?uncap_first}Form", value = "产品实体", required = true, dataType = "${entityName}Form")
+    })
+    @PutMapping(value = "/{id}")
+    public Result update(@PathVariable long id, @Valid ${entityName}Form ${entityName?uncap_first}Form) {
+        ${entityName} ${entityName?uncap_first} = ${entityName?uncap_first}Form.toPo(${entityName}.class);
+        ${entityName?uncap_first}.setId(id);
+        ${entityName?uncap_first}Service.update(${entityName?uncap_first});
+        return Result.success();
+    }
+
+    @ApiOperation(value = "获取${tableVo.ftlDescription}", notes = "获取指定${tableVo.ftlDescription}信息")
+    @ApiImplicitParam(paramType = "path", name = "id", value = "产品ID", required = true, dataType = "long")
+    @GetMapping(value = "/{id}")
+    public Result get(@PathVariable long id) {
+        log.info("get with id:{}", id);
+        return Result.success(${entityName?uncap_first}Service.get(id));
+    }
+
+    @ApiOperation(value = "查询${tableVo.ftlDescription}", notes = "根据条件查询${tableVo.ftlDescription}信息，简单查询")
+    @ApiImplicitParam(paramType = "query", name = "name", value = "产品名称", required = true, dataType = "string")
+    @ApiResponses(
+            @ApiResponse(code = 200, message = "处理成功", response = Result.class)
+    )
+    @GetMapping
+    public Result query(@RequestParam String name) {
+        log.info("query with name:{}", name);
+        ${entityName}QueryParam ${entityName?uncap_first}QueryParam = new ${entityName}QueryParam();
+        ${entityName?uncap_first}QueryParam.setName(name);
+        return Result.success(${entityName?uncap_first}Service.query(${entityName?uncap_first}QueryParam));
+    }
+
+    @ApiOperation(value = "搜索${tableVo.ftlDescription}", notes = "根据条件查询${tableVo.ftlDescription}信息")
+    @ApiImplicitParam(name = "${entityName?uncap_first}QueryForm", value = "产品查询参数", required = true, dataType = "${entityName}QueryForm")
+    @ApiResponses(
+            @ApiResponse(code = 200, message = "处理成功", response = Result.class)
+    )
+    @PostMapping(value = "/query")
+    public Result search(@Valid ${entityName}QueryForm ${entityName?uncap_first}QueryForm,@RequestParam(defaultValue = "1") int pageNum,@RequestParam(defaultValue = "10") int pageSize) {
+        if(${entityName?uncap_first}QueryForm == null){
+            ${entityName?uncap_first}QueryForm = new ${entityName}QueryForm();
+        }
+        Page<${entityName}> page = new Page<${entityName}>(pageNum,pageSize);
+        page.setSearchCount(true);
+        IPage ipage = ${entityName?uncap_first}Service.query(page,${entityName?uncap_first}QueryForm.toParam(${entityName}QueryParam.class));
+//        List<Role> roles = ipage.getRecords();
+//        List<RoleVo> roleVos = roles.stream().map(role -> {
+//            RoleVo roleVo = new RoleVo();
+//            BeanUtils.copyProperties(role,roleVo);
+//            return roleVo;
+//        }).collect(Collectors.toList());
+//        ipage.setRecords(roleVos);
+        return Result.success(ipage);
+    }
+}
+
